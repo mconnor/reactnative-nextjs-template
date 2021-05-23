@@ -2,8 +2,6 @@
  * JustAWebPage – attempt at making a “regular” page page and still embed React Native components.
  */
 
-import React from 'react'
-
 import { config } from '../config/config'
 
 import PageHead from '../components/page/PageHead'
@@ -15,6 +13,7 @@ export default function JustAWebPage ({ title = config.appName, description }) {
         title={title}
         description={description}
       />
+
       <article>Web page</article>
       <style jsx>{`
         article {

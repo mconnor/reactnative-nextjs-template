@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Platform } from 'react-native'
 import Head from 'next/head'
 

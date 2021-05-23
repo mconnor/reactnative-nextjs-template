@@ -5,7 +5,7 @@
   "author": "Tom Söderlund <tom@tomsoderlund.com>",
   "license": "ISC",
   "scripts": {
-    "dev": "next dev -p 3005",
+    "dev": "cross-env next dev -p 3005",
     "dev-expo": "expo start",
     "build": "next build",
     "start": "next start",
@@ -19,19 +19,24 @@
     "fix": "standard --fix"
   },
   "dependencies": {
-    "expo": "^40.0.0",
-    "expo-av": "~8.7.0",
+    "expo": "^41.0.1",
+    "expo-av": "~9.1.2",
     "next": "latest",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-elements": "^3.3.1",
-    "react-native-safe-area-context": "3.1.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.63.3",
+    "react-native-elements": "^3.4.1",
+    "react-native-safe-area-context": "3.2.0",
     "react-native-vector-icons": "^8.1.0",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.16.3"
   },
   "devDependencies": {
-    "@expo/next-adapter": "2.1.5",
-    "standard": "^16.0.3"
+    "@expo/next-adapter": "2.1.73",
+    "cross-env": "^7.0.3",
+    "file-loader": "^6.2.0",
+    "next-transpile-modules": "^7.2.0",
+    "path": "^0.12.7",
+    "standard": "^16.0.3",
+    "url-loader": "^4.1.1"
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Text } from 'react-native'
 
 export const H1 = (props) => <Heading {...props} level={1} />

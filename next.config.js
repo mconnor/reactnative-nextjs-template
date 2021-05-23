@@ -14,13 +14,9 @@ const nextConfig = {
   // For font support:
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push({
-      test: /\.ttf$/,
-      loader: 'url-loader', // or directly file-loader
-      include: path.resolve(
-        __dirname,
-        'node_modules/react-native-vector-icons'
-      )
-    })
+      test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+      loader: "file-loader?name=assets/[name].[hash].[ext]",
+    });
     return config
   }
 }
